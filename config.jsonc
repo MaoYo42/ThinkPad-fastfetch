@@ -10,7 +10,8 @@
             "right": 2
         },
         "color": {
-            "1": "red"
+            "1": "white",
+            "2": "red"
         }
     },
     "display": {
