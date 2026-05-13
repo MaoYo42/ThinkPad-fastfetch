@@ -48,6 +48,7 @@ Classic V-shaped logo with TrackPoint red dot, in a framed terminal info panel.
 - Framed info panel with ThinkPad red accents
 - System info: OS, kernel, uptime, OS age, Window Manager, terminal, shell, fonts, packages, display, CPU, GPU, memory, disk
 - Rainbow-colored title decoration
+- Golden `#d6ca00` output values for high readability against dark terminals
 
 ## Credits
 
