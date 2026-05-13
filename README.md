@@ -9,6 +9,13 @@ Designed for the ThinkPad T480s — works on any ThinkPad.
 
 ## Preview
 
+![ThinkPad fastfetch screenshot](assets/preview.png)
+
+> Terminal output showing the V-shaped ThinkPad logo with TrackPoint red dot alongside a framed system info panel. Red box borders (`#e32636`) with golden output values (`#d6ca00`) and a rainbow title decoration.
+
+<details>
+<summary>Text-only preview (for readers without images)</summary>
+
 ```
 ████████████████                ╭──────────────────────╮
     █▙▄▄▄▄▄▄▄▄▄▟█               │  󰮯 fastfetch  󰊠 󰊠 󰊠 󰊠 󰊠 󰊠 󰊠 │
@@ -36,7 +43,7 @@ Designed for the ThinkPad T480s — works on any ThinkPad.
                                  ╰──────────────────────╯
 ```
 
-> Color scheme in the actual terminal: **red** box borders + **golden** `#d6ca00` output values + **rainbow** title decoration.
+</details>
 
 ## Installation
 
