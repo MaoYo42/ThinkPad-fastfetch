@@ -1,54 +1,78 @@
 # ThinkPad-fastfetch
 
-A ThinkPad-inspired fastfetch configuration by [MaoYo42](https://github.com/MaoYo42), based on the original design by [trekkie-dev](https://codeberg.org/trekkie-dev/fastfetch).
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![fastfetch](https://img.shields.io/badge/fastfetch-2.x-red)](https://github.com/fastfetch-cli/fastfetch)
 
-Classic V-shaped logo with TrackPoint red dot, in a framed terminal info panel.
+A **ThinkPad-inspired** fastfetch configuration with the classic **V-shaped ASCII logo** and **TrackPoint red dot**, framed in a ThinkPad-accented info panel.
+
+Designed for the ThinkPad T480s — works on any ThinkPad.
 
 ## Preview
 
 ```
-████████████████                  ╭───────────────╮
-   █▙▄▄▄▄▄▄▄▄▄▟█               │ 󰮯 fastfetch   │ 󰮯 󰊠 󰊠 󰊠 󰊠 󰊠 󰊠 󰊠
-    ▀▀▀▀▀▀▀▀▀▀▀                  ├───────────────┤
-   ▄████████████                  │  whoami      │ maoyo
-   █▙▄▄ █▙▄▄▄▄▟█               │ 󰇅 hostname    │ arch
-    ▀▀▀  ▀▀▀▀▀▀                  │  machine     │ ThinkPad T480s
-▄███████▄                         │ 󰣇 distro      │ Arch Linux
-█▙▄▄▄▄▄▟█▄▄▄▄▄▄▄               │  kernel      │ Linux 6.x
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀               │ 󰃭 os age      │ 55 days
-   █████▄ ▄█████                  │ 󰥔 uptime      │ 16 mins
-▄▄▄▄▄▄▄▄▟█▙▄▄▄▄▄               ├───────────────┤
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀               │ 󰾍 window mgr  │ niri
-   ▄████████████                  │  terminal    │ kitty
-   █▙▄▄▄▄▄▄▄▄▄▄▄               │  shell       │ fish
-   ▀▀▀▀▀▀▀▀▀▀▀▀▀               │ 󰛖 term font   │ JetBrainsMono
-██ █████████████                  │  system font │ Source Han Sans
-    ▄▄▄▄▄▄▄▄▄▄▄▄               │ 󰏔 packages    │ 1330 (pacman)
-   █▛▀▀▀▀▀▀▀▀▀▀▀               ├───────────────┤
-████████████████                  │ 󰍹 display     │ 1920x1080 @ 60 Hz
-▄▄                               │ 󰍛 cpu         │ i7-8650U (8) @ 4.20 GHz
-██▄▄▄▄▄▄▄▄▄▄▄▄▄▄               │ 󰢮 gpu         │ UHD Graphics 620
-██▀▀▀▀▀▀▀▀▀▀▀▀▀▀               │  memory      │ 23.34 GiB
-▀▀                               │ 󰉉 disk        │ 237.47 GiB - btrfs
-                                  ╰───────────────╯
+████████████████                ╭──────────────────────╮
+    █▙▄▄▄▄▄▄▄▄▄▟█               │  󰮯 fastfetch  󰊠 󰊠 󰊠 󰊠 󰊠 󰊠 󰊠 │
+     ▀▀▀▀▀▀▀▀▀▀▀                 ├──────────────────────┤
+    ▄████████████                 │   whoami      maoyo │
+    █▙▄▄ █▙▄▄▄▄▟█              │  󰇅 hostname    arch │
+     ▀▀▀  ▀▀▀▀▀▀                 │   machine     ThinkPad T480s │
+ ▄███████▄                        │  󰣇 distro      Arch Linux │
+ █▙▄▄▄▄▄▟█▄▄▄▄▄▄▄              │   kernel      6.18.29-1-lts │
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀              │  󰃭 os age      56 days │
+    █████▄ ▄█████                 │  󰥔 uptime      7h 47m │
+ ▄▄▄▄▄▄▄▄▟█▙▄▄▄▄▄              ├──────────────────────┤
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀              │  󰾍 window mgr  niri │
+    ▄████████████                 │   terminal    kitty │
+    █▙▄▄▄▄▄▄▄▄▄▄▄              │   shell       fish │
+    ▀▀▀▀▀▀▀▀▀▀▀▀▀              │  󰛖 term font   JetBrainsMono │
+██ █████████████                 │   font        Sarasa UI SC │
+    ▄▄▄▄▄▄▄▄▄▄▄▄               │  󰏔 packages    1311 (pacman) │
+   █▛▀▀▀▀▀▀▀▀▀▀▀               ├──────────────────────┤
+████████████████                 │  󰍹 display     1920×1080 @ 60Hz │
+▄▄                               │  󰍛 cpu         i7-8650U (8) @ 4.20GHz │
+██▄▄▄▄▄▄▄▄▄▄▄▄▄▄               │  󰢮 gpu         UHD Graphics 620 │
+██▀▀▀▀▀▀▀▀▀▀▀▀▀▀               │   memory      9.82 / 23.34 GiB │
+▀▀                               │  󰉉 disk        53.30 / 237.47 GiB │
+                                 ╰──────────────────────╯
 ```
+
+> Color scheme in the actual terminal: **red** box borders + **golden** `#d6ca00` output values + **rainbow** title decoration.
 
 ## Installation
 
-1. Copy the files to `~/.config/fastfetch/`:
-   ```bash
-   cp config.jsonc ~/.config/fastfetch/
-   cp thinkpad-v.txt ~/.config/fastfetch/
-   ```
-2. Run `fastfetch` to see the result.
+```bash
+# 1. Clone the repo
+git clone https://github.com/MaoYo42/ThinkPad-fastfetch.git ~/ThinkPad-fastfetch
+
+# 2. Copy config to fastfetch directory
+cp -r ~/ThinkPad-fastfetch/config.jsonc ~/.config/fastfetch/
+cp -r ~/ThinkPad-fastfetch/thinkpad-v.txt ~/.config/fastfetch/
+
+# 3. Run it
+fastfetch
+```
+
+### Verify
+
+If everything is set up correctly, you should see the V-shaped ThinkPad logo alongside a framed system info panel with red accents and golden output values.
 
 ## Features
 
-- ThinkPad V-shaped ASCII logo with red TrackPoint dot
-- Framed info panel with ThinkPad red accents
-- System info: OS, kernel, uptime, OS age, Window Manager, terminal, shell, fonts, packages, display, CPU, GPU, memory, disk
-- Rainbow-colored title decoration
-- Golden `#d6ca00` output values for high readability against dark terminals
+| Element | Detail |
+|---------|--------|
+| **Logo** | Classic ThinkPad V-shaped ASCII with red TrackPoint dot (two `██` chars) |
+| **Frame** | ThinkPad red (`#e32636`) box borders — `╭─╮├─┤╰─╯` |
+| **Values** | Golden `#d6ca00` output for all data fields |
+| **Title** | Rainbow-colored "fastfetch" header with `󰮯 󰊠 󰊠 ...` decoration |
+| **Info** | OS, kernel, uptime, os age, WM, terminal, shell, fonts, packages, display, CPU, GPU, memory, disk |
+
+## Files
+
+```
+~/.config/fastfetch/
+├── config.jsonc       # fastfetch configuration (JSON with comments)
+└── thinkpad-v.txt     # ThinkPad V-shaped ASCII logo art
+```
 
 ## Credits
 
