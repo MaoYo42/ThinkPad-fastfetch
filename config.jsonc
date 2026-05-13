@@ -3,15 +3,14 @@
     "logo": {
         "type": "file",
         "source": "$HOME/.config/fastfetch/thinkpad-v.txt",
-        "height": 10,
         "padding": {
             "top": 1,
             "left": 2,
             "right": 2
         },
         "color": {
-            "1": "white",
-            "2": "red"
+            "1": "red",
+            "2": "white"
         }
     },
     "display": {
@@ -56,6 +55,11 @@
             "type": "kernel"
         },
         {
+            "key": "{#31}│ {#37}󰃭 os age     {#keys} {#31}│",
+            "type": "command",
+            "text": "birth_install=$(stat -c %W / | tr -d '-'); if [ \"$birth_install\" -eq 0 ]; then birth_install=$(stat -c %Y /); fi; now=$(date +%s); days=$(( (now - birth_install) / 86400 )); echo \"$days days\""
+        },
+        {
             "key": "{#31}│ {#37}󰥔 uptime   {#keys}   {#31}│",
             "type": "uptime"
         },
@@ -81,6 +85,10 @@
         {
             "key": "{#31}│ {#37}󰛖 term font  {#keys} {#31}│",
             "type": "terminalfont"
+        },
+        {
+            "key": "{#31}│ {#37} system font {#keys}{#31}│",
+            "type": "font"
         },
         {
             "key": "{#31}│ {#37}󰏔 packages    {#keys}{#31}│",
